@@ -1,27 +1,20 @@
 <template>
-  <div id="app" class="text-center">
-    <scoreCounter :msg="msg" />
+  <div id="app" class="container">
+    <Form title="Todo App" />
   </div>
 </template>
 
 <script>
-import ScoreCounter from "./components/scoreCounter.vue";
+// @ is an alias to /src
+import Form from "@/components/Form.vue";
 
 export default {
   name: "App",
   components: {
-    ScoreCounter
-  },
-  data() {
-    return {
-      msg: "Player Score"
-    };
+    Form
   }
 };
 </script>
 
-<style scoped>
-#app {
-  color: blue;
-}
+<style>
 </style>
